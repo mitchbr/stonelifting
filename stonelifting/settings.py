@@ -25,7 +25,15 @@ SECRET_KEY = 'django-insecure-pnun-wkx2ndk+n4g*u!k95d6i91$h&1obw3oz@v4qtwix@l(q5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'stonelifting.mitchbr.dev',
+    'localhost'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://stonelifting.mitchbr.dev', 
+    'http://localhost'
+]
 
 
 # Application definition
