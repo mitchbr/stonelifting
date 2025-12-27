@@ -12,7 +12,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: List repository workflows using the GitHub API
+    - name: Deploy to Pi
       run: |
         curl -L \
-          https://pi.mitchbr.dev/deploy?service=${{ github.repository }}
+          https://pi.mitchbr.dev/deploy?service=${{ github.event.repository.name }}
