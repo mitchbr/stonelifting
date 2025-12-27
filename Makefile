@@ -1,4 +1,5 @@
 pull:
+	git config --global --add safe.directory /home/mitchbr/Repositories/stonelifting
 	git pull
 
 build:
